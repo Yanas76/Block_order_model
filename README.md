@@ -2,11 +2,13 @@
 
 This Jupyter Notebook contains code for augmenting a dataset and training a PyTorch model to arrange text blocks in the correct order. The goal of the model is to determine the sequential arrangement of text blocks based on their spatial positions after individual words in a document have been recognized and grouped.
 
+
 ## How It Works
 
 The model is provided with the coordinates of each text block and iteratively determines the correct order by selecting the first block at each step.
 After a block is selected, it is removed from the list, and the procedure is repeated until no blocks are left.
 This approach ensures that the text blocks are arranged in a coherent reading order.
+
 
 ## Data Requirements
 
@@ -21,6 +23,7 @@ Each document in the dataset should be represented as a separate JSON file conta
 { "x1": 41, "y1": 783, "x2": 791, "y2": 1048 }
 ]
 ```
+
 
 Here, each block is represented by its four coordinates: (x1, y1) and (x2, y2), denoting the top-left and bottom-right corners, respectively.
 
