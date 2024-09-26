@@ -12,7 +12,9 @@ This approach ensures that the text blocks are arranged in a coherent reading or
 
 The dataset should be uploaded to the text_blocks_locations folder.
 Each document in the dataset should be represented as a separate JSON file containing a list of blocks, where each block is defined by its four corner coordinates:
-
+[
+{
+]
 [{ "x1": 67.13, "y1": 96, "x2": 790.13, "y2": 174 },
 { "x1": 41, "y1": 201, "x2": 791, "y2": 466 }, { "x1": 50.5, "y1": 492, "x2": 753.5, "y2": 537 }, { "x1": 41, "y1": 555, "x2": 791, "y2": 757 },
     { "x1": 41, "y1": 783, "x2": 791, "y2": 1048 }
